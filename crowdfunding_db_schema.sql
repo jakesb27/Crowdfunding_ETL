@@ -7,16 +7,16 @@ CREATE TABLE "campaign" (
     "contact_id" INT   NOT NULL,
     "company_name" TEXT   NOT NULL,
     "description" TEXT   NOT NULL,
-    "goal" INT   NOT NULL,
-    "pledged" INT   NOT NULL,
+    "goal" NUMERIC   NOT NULL,
+    "pledged" NUMERIC   NOT NULL,
     "outcome" TEXT   NOT NULL,
     "backers_count" INT   NOT NULL,
-    "country" TEXT(2)   NOT NULL,
-    "currency" TEXT(3)   NOT NULL,
+    "country" TEXT   NOT NULL,
+    "currency" TEXT   NOT NULL,
     "launched_date" DATE   NOT NULL,
     "end_date" DATE   NOT NULL,
-    "category_id" INT   NOT NULL,
-    "subcategory_id" INT   NOT NULL,
+    "category_id" TEXT   NOT NULL,
+    "subcategory_id" TEXT   NOT NULL,
     CONSTRAINT "pk_campaign" PRIMARY KEY (
         "cf_id"
      )
@@ -33,7 +33,7 @@ CREATE TABLE "contacts" (
 );
 
 CREATE TABLE "category" (
-    "category_id" INT   NOT NULL,
+    "category_id" TEXT   NOT NULL,
     "category_name" TEXT   NOT NULL,
     CONSTRAINT "pk_category" PRIMARY KEY (
         "category_id"
@@ -41,7 +41,7 @@ CREATE TABLE "category" (
 );
 
 CREATE TABLE "subcategory" (
-    "subcategory_id" INT   NOT NULL,
+    "subcategory_id" TEXT   NOT NULL,
     "subcategory_name" TEXT   NOT NULL,
     CONSTRAINT "pk_subcategory" PRIMARY KEY (
         "subcategory_id"
