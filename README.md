@@ -3,7 +3,7 @@
 UCI Data Analytics Bootcamp | Mini Project 2
 
 ### Contributors
-Alex Heang | Jake Boden
+<a href="https://github.com/Aheang213">Alex Heang</a> | <a href="https://github.com/jakesb27">Jake Boden</a>
 
 <br />
 
